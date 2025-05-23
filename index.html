@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ISBN 批次查詢工具</title>
+</head>
+<body>
+  <h2>批次輸入 ISBN 查書籍資訊</h2>
+  <textarea id="isbnList" rows="10" cols="40" placeholder="每行一個ISBN"></textarea><br>
+  <button onclick="searchBooks()">查詢</button>
+  <button onclick="exportExcel()">匯出 Excel</button>
+  <table border="1" id="resultsTable">
+    <thead>
+      <tr><th>ISBN</th><th>書名</th><th>中文書名</th><th>作者</th><th>出版社</th><th>出版年</th><th>定價</th><th>資料來源</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
